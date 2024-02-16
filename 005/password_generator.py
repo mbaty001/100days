@@ -1,6 +1,7 @@
 import random
 import string
 
+
 def main():
     password = []
 
@@ -10,16 +11,17 @@ def main():
 
     for _ in range(no_of_letters):
         password.append(random.choice(string.ascii_letters))
-    
+
     for _ in range(no_of_digits):
         password.append(random.choice(string.digits))
-    
+
     for _ in range(no_of_symbols):
         password.append(random.choice('!@#$%^&()-+'))
-    
+
     random.shuffle(password)
-    
+
     print(f"Generated password: {''.join(password)}")
+
 
 if __name__ == "__main__":
     main()
