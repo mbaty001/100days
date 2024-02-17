@@ -16,7 +16,7 @@ def main():
         password.append(random.choice(string.digits))
 
     for _ in range(no_of_symbols):
-        password.append(random.choice('!@#$%^&()-+'))
+        password.append(random.choice("!@#$%^&()-+"))
 
     random.shuffle(password)
 

@@ -12,7 +12,8 @@ def win():
 
 
 def main():
-    print('''
+    print(
+        '''
     *******************************************************************************
             |                   |                  |                     |
     _________|________________.=""_;=.______________|_____________________|_______
@@ -33,15 +34,22 @@ def main():
     ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
     /______/______/______/______/______/______/______/______/______/______/_____ /
     *******************************************************************************
-    ''')
+    '''
+    )
     print("Welcome to Treasure Island")
     print("Your mission is to find a treasure")
 
-    left_or_right = input("You are at the cross road. You can go 'left' or 'right': ").lower()
+    left_or_right = input(
+        "You are at the cross road. You can go 'left' or 'right': "
+    ).lower()
     if left_or_right == "left":
-        swim_or_wait = input("You came to the river. You can 'swim' or 'wait': ").lower()
+        swim_or_wait = input(
+            "You came to the river. You can 'swim' or 'wait': "
+        ).lower()
         if swim_or_wait == "wait":
-            doors = input("You see three doors. Which do you choose: 'yellow', 'red' or 'blue': ").lower()
+            doors = input(
+                "You see three doors. Which do you choose: 'yellow', 'red' or 'blue': "
+            ).lower()
             if doors == "yellow":
                 win()
             else:
