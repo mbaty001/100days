@@ -27,4 +27,4 @@
             black --fast .
         - name: Lint with ruff
           run: |
-            ruff -v check .
+            ruff check -v .
